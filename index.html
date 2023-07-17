@@ -3,15 +3,49 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css">
-		<title>Post It</title>
+		<link rel="stylesheet" href="styles.css" />
+		<title>POST IT</title>
 	</head>
 	<body>
-		<header class="header">
-            <h1>Post It</h1>
-        </header>
-        <div class="blog-posts">
-
-        </div>
+		<div class="header-container">
+			<header class="header">
+				<h1 class="header-text">Post It</h1>
+			</header>
+		</div>
+		<form class="input-container">
+			<label for="postTitle">TITLE</label>
+			<input type="text" id="post-title" name="postTitle" />
+			<label for="username">USERNAME</label>
+			<input type="text" id="username" name="username" />
+			<label for="postContent">POST</label>
+			<input type="text" id="post-content" name="postContent" />
+			<button>SUBMIT</button>
+		</form>
+		<div class="blog-post-container">
+			<div class="blog-post-border"></div>
+			<div class="blog-post-1">
+				<h2>Title</h2>
+				<h3>by name</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed
+					pulvinar proin gravida. Accumsan lacus vel facilisis volutpat est
+					velit.
+				</p>
+			</div>
+		</div>
+		<div class="blog-post-container-2">
+			<div class="blog-post-border-2"></div>
+			<div class="blog-post-2">
+				<h2>Title</h2>
+				<h3>by name</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed
+					pulvinar proin gravida. Accumsan lacus vel facilisis volutpat est
+					velit.
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
