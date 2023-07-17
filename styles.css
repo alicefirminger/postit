@@ -9,17 +9,16 @@
 
 body {
 	font-size: 18px;
-	background-color: #F6CA83;
+	background-color: #f6ca83;
 	font-weight: 100;
-
 }
 
 /* Header styles */
 .header-container {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .header {
@@ -28,7 +27,7 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	width: 90vw;
-	background-color: #D0D38F;
+	background-color: #d0d38f;
 	border: 3px solid black;
 	margin: 1rem 1rem 3rem 1rem;
 	padding: 1rem 1rem;
@@ -54,7 +53,7 @@ body {
 	align-items: center;
 	width: 75vw;
 	height: 45vh;
-	background-color: #FF87AB;
+	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
 }
@@ -87,10 +86,9 @@ body {
 	align-items: center;
 	width: 75vw;
 	height: 45vh;
-	background-color: #FF87AB;
+	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
-	
 }
 
 .blog-post-border-2 {
@@ -105,21 +103,34 @@ body {
 	margin-right: 0;
 }
 
-p, h2, h3 {
+p,
+h3, 
+h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 100;
+	margin-bottom: 0.5rem;
 }
 
+
+h3 {
+	font-style: italic;
+	font-size: 1rem;
+}
+
+h2 {
+	text-decoration: underline;
+	font-size: 1.3rem;
+}
 /* Input and Button styles */
 .input-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 4rem; 
+	margin-bottom: 4rem;
 	display: none;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100; 
+	font-weight: 100;
 }
 
 .view {
@@ -133,23 +144,30 @@ p, h2, h3 {
 }
 
 input {
-	background-color: #FF87AB;
+	background-color: #ff87ab;
 	width: 90vw;
 	height: 6vh;
 	border: 3px solid black;
 	margin-bottom: 0.5rem;
+	padding: 1rem 1rem;
+	font-size: 1.2rem;
 }
 
-
-#post-content {
+textarea {
+	background-color: #ff87ab;
 	width: 90vw;
 	height: 20vh;
+	border: 3px solid black;
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+	resize: vertical;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
 }
-
 
 button {
 	margin: 1rem 1rem;
-	background-color: #D0D38F;
+	background-color: #d0d38f;
 	border: 3px solid black;
 	width: 30vw;
 	height: 7vh;

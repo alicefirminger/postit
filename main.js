@@ -10,13 +10,13 @@ function createBlogPost(blogPost, index) {
 	titleElement.textContent = blogPost.title;
 	postContainer.appendChild(titleElement);
 
-	const authorElement = document.createElement("h3");
-	authorElement.textContent = blogPost.author;
-	postContainer.appendChild(authorElement);
-
 	const contentElement = document.createElement("p");
 	contentElement.textContent = blogPost.content;
 	postContainer.appendChild(contentElement);
+
+	const authorElement = document.createElement("h3");
+	authorElement.textContent = `by ${blogPost.author}`;
+	postContainer.appendChild(authorElement);
 
 	const blogContainer = document.querySelector(".blog-post-1");
 	const blogContainer2 = document.querySelector(".blog-post-2");
