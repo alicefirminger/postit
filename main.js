@@ -76,17 +76,14 @@ form.addEventListener("submit", handleFormSubmit);
 
 function handleFormDisplay() {
 	const header = document.querySelector(".header");
+  const submit = document.querySelector(".button")
 	const form = document.querySelector(".input-container");
-	header.addEventListener("click", () => {
-		form.classList.toggle("view");
+	submit.addEventListener("click", () => {
+		form.classList.toggle("hide-view");
+	});
+  header.addEventListener("click", () => {
+		form.classList.toggle("hide-view");
 	});
 }
 handleFormDisplay();
 
-// function handlePostDisplay() {
-// 	const button = document.querySelector(".button");
-// 	button.addEventListener("click", () => {
-// 	  form.classList.toggle("view-blog-post");
-// 	});
-//   }
-//   handlePostDisplay();

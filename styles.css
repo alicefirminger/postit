@@ -32,6 +32,11 @@ body {
 	margin: 1rem 1rem 3rem 1rem;
 	padding: 1rem 1rem;
 }
+
+.header:hover {
+	cursor: pointer;
+}
+
 .header-text {
 	font-weight: 100;
 }
@@ -103,16 +108,13 @@ body {
 	margin-right: 0;
 }
 
-
-
 p,
-h3, 
+h3,
 h2 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-weight: 100;
 	margin-bottom: 0.5rem;
 }
-
 
 h3 {
 	font-style: italic;
@@ -126,23 +128,18 @@ h2 {
 /* Input and Button styles */
 .input-container {
 	display: flex;
+	font-size: 1.2rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 4rem;
-	display: none;
-	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1.5rem;
+	font-family: Helvetica, sans-serif;
 	font-weight: 100;
 }
 
-.view {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 4rem;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
+.hide-view {
+	display: none;
 }
 
 input {
@@ -151,8 +148,11 @@ input {
 	height: 6vh;
 	border: 3px solid black;
 	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
 	padding: 1rem 1rem;
 	font-size: 1.2rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
 }
 
 textarea {
@@ -163,7 +163,8 @@ textarea {
 	margin-bottom: 0.5rem;
 	padding: 1rem;
 	resize: vertical;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
 	font-size: 1.2rem;
 }
 
@@ -173,5 +174,7 @@ button {
 	border: 3px solid black;
 	width: 30vw;
 	height: 7vh;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
 }
