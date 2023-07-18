@@ -76,7 +76,7 @@ body {
 	justify-content: flex-start;
 	align-items: flex-start;
 	position: relative;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 .blog-post-2 {
@@ -102,6 +102,8 @@ body {
 	margin-top: 0;
 	margin-right: 0;
 }
+
+
 
 p,
 h3, 

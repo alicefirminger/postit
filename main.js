@@ -1,10 +1,21 @@
 console.log("hi I am linked correctly");
 
 const blogPostData = [];
+let blogPostCounter = 0;
 
-function createBlogPost(blogPost, index) {
+// Hide initial blog post containers
+const initialContainers = document.querySelectorAll(
+	".blog-post-container, .blog-post-container-2"
+);
+initialContainers.forEach((container) => {
+	container.style.display = "none";
+});
+
+function createBlogPost(blogPost) {
 	const postContainer = document.createElement("div");
-	postContainer.classList.add("blog-post");
+	postContainer.classList.add(
+		blogPostCounter % 2 === 0 ? "blog-post-1" : "blog-post-2"
+	);
 
 	const titleElement = document.createElement("h2");
 	titleElement.textContent = blogPost.title;
@@ -18,14 +29,24 @@ function createBlogPost(blogPost, index) {
 	authorElement.textContent = `by ${blogPost.author}`;
 	postContainer.appendChild(authorElement);
 
-	const blogContainer = document.querySelector(".blog-post-1");
-	const blogContainer2 = document.querySelector(".blog-post-2");
+	const blogContainer = document.createElement("div");
+	blogContainer.classList.add(
+		blogPostCounter % 2 === 0 ? "blog-post-container" : "blog-post-container-2"
+	);
 
-	if (index % 2 === 0) {
-		blogContainer.appendChild(postContainer);
-	} else {
-		blogContainer2.appendChild(postContainer);
-	}
+	const blogBorder = document.createElement("div");
+	blogBorder.classList.add(
+		blogPostCounter % 2 === 0 ? "blog-post-border" : "blog-post-border-2"
+	);
+	blogContainer.appendChild(blogBorder);
+
+	blogContainer.appendChild(postContainer);
+
+	const blogContainers = document.querySelectorAll(".blog-container");
+	const lastBlogContainer = blogContainers[blogContainers.length - 1];
+	lastBlogContainer.appendChild(blogContainer);
+
+	blogPostCounter++;
 }
 
 function handleFormSubmit(event) {
@@ -43,7 +64,7 @@ function handleFormSubmit(event) {
 
 	blogPostData.push(newBlogPost);
 
-	createBlogPost(newBlogPost, blogPostData.length - 1);
+	createBlogPost(newBlogPost);
 
 	titleInput.value = "";
 	contentInput.value = "";
@@ -61,3 +82,11 @@ function handleFormDisplay() {
 	});
 }
 handleFormDisplay();
+
+// function handlePostDisplay() {
+// 	const button = document.querySelector(".button");
+// 	button.addEventListener("click", () => {
+// 	  form.classList.toggle("view-blog-post");
+// 	});
+//   }
+//   handlePostDisplay();
