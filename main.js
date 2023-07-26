@@ -29,6 +29,19 @@ function createBlogPost(blogPost) {
 	authorElement.textContent = `by ${blogPost.author}`;
 	postContainer.appendChild(authorElement);
 
+	const buttonContainer = document.createElement("div");
+	buttonContainer.classList.add('button-container')
+	postContainer.appendChild(buttonContainer);
+	
+
+	const editPostElement = document.createElement("button");
+	editPostElement.textContent = `✍️`;
+	buttonContainer.appendChild(editPostElement);
+
+	const deleteElement = document.createElement("button");
+	deleteElement.textContent = `🗑️`;
+	buttonContainer.appendChild(deleteElement);
+
 	const blogContainer = document.createElement("div");
 	blogContainer.classList.add(
 		blogPostCounter % 2 === 0 ? "blog-post-container" : "blog-post-container-2"
@@ -76,14 +89,13 @@ form.addEventListener("submit", handleFormSubmit);
 
 function handleFormDisplay() {
 	const header = document.querySelector(".header");
-  const submit = document.querySelector(".button")
+	const submit = document.querySelector(".button");
 	const form = document.querySelector(".input-container");
 	submit.addEventListener("click", () => {
 		form.classList.toggle("hide-view");
 	});
-  header.addEventListener("click", () => {
+	header.addEventListener("click", () => {
 		form.classList.toggle("hide-view");
 	});
 }
 handleFormDisplay();
-
