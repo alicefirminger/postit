@@ -61,6 +61,7 @@ body {
 	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
+	padding-bottom: 3rem;
 }
 
 .blog-post-border {
@@ -93,6 +94,7 @@ body {
 	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
+	padding-top: 3rem;
 }
 
 .blog-post-border-2 {
