@@ -57,7 +57,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 75vw;
-	height: 45vh;
+	height: auto;
 	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
@@ -65,7 +65,7 @@ body {
 
 .blog-post-border {
 	width: 80vw;
-	height: 45vh;
+	height: 100%;
 	border-top: 3px solid black;
 	border-left: 3px solid black;
 	border-bottom: 3px solid black;
@@ -88,9 +88,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	width: 75vw;
-	height: 45vh;
+	height: auto;
 	background-color: #ff87ab;
 	text-align: center;
 	padding: 2rem;
@@ -98,7 +97,7 @@ body {
 
 .blog-post-border-2 {
 	width: 80vw;
-	height: 45vh;
+	height: 100%;
 	border-top: 3px solid black;
 	border-right: 3px solid black;
 	border-bottom: 3px solid black;
@@ -126,7 +125,7 @@ h2 {
 	font-size: 1.3rem;
 }
 
-/* Input and Button styles */
+/* Input styles */
 .input-container {
 	display: flex;
 	font-size: 1.2rem;
@@ -169,6 +168,7 @@ textarea {
 	font-size: 1.2rem;
 }
 
+/* Button styles */
 .button {
 	margin: 1rem 1rem;
 	background-color: #d0d38f;
@@ -197,5 +197,4 @@ textarea {
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
-	margin-top: 4rem;
 }
